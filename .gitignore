@@ -1,0 +1,12 @@
+# File gồm những file và folder không muốn commit lên git
+# Bao gồm:
+# Các file pkl: Những file mô hình do model train ra: có thể có kích thước rất lớn và nó thay đổi liên tục nên không nên commit lên
+# Folder __pycache__: File cache của Python => File lưu thông tin của python để tăng tốc độ
+# Folder/ File data: Không nên commit do kích thước lớn (có thể commit nếu là file txt hoặc csv nêu nhẹ)
+# __pycache__/*: Không commit những thành phần con của thư mục pycache
+# /: Những thành phần con của thư mục cũng sẽ không commit
+
+*.pkl  
+__pycache__/
+__pycache__/*
+Data/
