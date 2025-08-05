@@ -140,10 +140,10 @@ def WOE_transform(woe_data, col, iv_table):
     # Create a DataFrame containing 'Value' and 'WOE' columns
     woe_df = iv_table[['Value', 'WOE']]
 
-    name='woe_'+ col
+    name = 'woe_'+ col
 
     # Rename 'WOE' column for clarity
-    woe_df.rename(columns={'WOE': name}, inplace=True)
+    woe_df.rename(columns = {'WOE': name}, inplace=True)
 
     # Merge 'woe_data' with 'woe_df' based on 'col'
     woe_data = pd.merge(woe_data, woe_df, how='left', left_on=col, right_on='Value')
@@ -156,4 +156,7 @@ def WOE_transform(woe_data, col, iv_table):
 
 def check():
     print("Hello Alice in Wonderland!")
-    
+
+
+def Music():
+    print("Hà Nội mùa thu!")
